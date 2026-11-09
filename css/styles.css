@@ -231,6 +231,35 @@ section{ padding-block: clamp(48px, 8vw, 96px); }
   .portfolio__grid{ grid-template-columns: repeat(3,minmax(0,1fr)); }
 }
 
+/* --------- Portfolio case studies --------- */
+.portfolio__case-study-link{ margin:1rem; }
+.case-study{ max-width:850px; padding-block:clamp(32px, 6vw, 64px); overflow-wrap:anywhere; }
+.case-study__nav{ min-height:var(--header-h); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.75rem; padding-block:.5rem; }
+.case-study__back{ display:inline-block; padding-block:.75rem; text-decoration:underline; text-underline-offset:.2em; }
+.case-study__intro{ padding-bottom:2rem; }
+.case-study__intro h1{ margin-block:.5rem; }
+.case-study__eyebrow{ color:var(--brand-300, #6bb7ff); font-weight:600; }
+.case-study__subtitle{ color:var(--muted); margin-bottom:1.5rem; }
+.case-study__business{ padding-block:0; }
+.case-study__business > h2{ margin-top:0; }
+.case-study__section{ padding-block:1.5rem; border-top:1px solid var(--border); }
+.case-study__section h3{ margin-top:0; }
+.case-study p,.case-study li{ max-width:70ch; }
+.case-study li + li{ margin-top:.65rem; }
+.case-study ul{ padding-left:1.5rem; }
+.case-study__technical{ background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); margin-block:1rem 2rem; }
+.case-study__technical summary{ cursor:pointer; padding:1rem; font-weight:600; font-size:1.1rem; }
+.case-study__technical-content{ padding:0 1rem 1rem; }
+.case-study__technical-content p:last-child{ margin-bottom:0; }
+.case-study__disclosure{ padding-block:1.5rem; border-top:1px solid var(--border); }
+.case-study__disclosure h2{ margin-top:0; }
+.case-study__ai-note{ color:var(--muted); font-size:.9rem; }
+.case-study__actions{ display:flex; flex-wrap:wrap; align-items:center; gap:1rem; padding-block:1rem; }
+.case-study-page .footer__contact{ text-align:center; overflow-wrap:anywhere; }
+.case-study__skip{ position:absolute; top:.5rem; left:1rem; z-index:100; padding:.75rem 1rem; background:var(--panel); transform:translateY(-200%); }
+.case-study__skip:focus{ transform:translateY(0); }
+.case-study-page #main-content{ scroll-margin-top:calc(var(--header-h) + 1rem); }
+
 /* --------- About --------- */
 .about__content{
   background:var(--panel); border:1px solid var(--border);
